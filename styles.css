@@ -1,0 +1,14 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.header {
+    background-color: #F5F5DD;
+    border-radius: 10px;
+    /* margin: 30px 20px 30px 20px; */
+    padding: 2px;
+    height: auto;
+}

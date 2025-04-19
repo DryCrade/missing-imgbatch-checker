@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Missing IMGBatch Checker</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Missing IMGBatch Checker</h1>
+    </div>
+    <br><br>
+    <span class="desc"><u>Find out what IMG_xxxx is missing from a folder</u></span><br><br>
+    <hr>
+    <div class="tutorial">
+        <h2>Step-by-step tutorial</h2>
+        <p>1. Choose the folder you want to scan. <br><br>
+            2. Click on 'Upload'. The website should display all the file names that are uplaoded. <br><span style="font-weight: bold;">NOTE</span>: Do not skip this step or it will not work.<br><br>
+            3. Declare the range you want to scan. <br><span style="font-weight: bold;">EXAMPLE</span>: If you want to start scanning from IMG_1000 to IMG_2000. <br>Set the value of 'from' to 1000 and 'to' to 2000.<br><br>
+            4. Click 'Check' and enjoy the results! <br><br>
+        </p>
+    <hr>
+    <br>
+    </div>
+    <form class="upload">
+        <input type="file" id="fileInput" webkitdirectory multiple>
+        <br><br>
+        <button type="submit">Upload</button>
+        <p id="uploadedFilesList"></p>
+    </form>
+    <br><br>
+    <div class="bound">
+        From: <input type="number" id="from">&nbsp&nbsp&nbsp&nbsp&nbsp
+    To: <input type="number" id="to"> 
+    </div>
+    <div class="check_button"><br><br>
+        <button onclick="checkFolder()">Check</button>
+    </div>
+    <div class="results">
+        <p id="result"></p>
+    </div>
+    <div class="example">
+        <img src="images/imgbatch_example.png" width="500px">
+    </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
