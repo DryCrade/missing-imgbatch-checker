@@ -14,18 +14,20 @@ uploadForm.addEventListener('submit', function(e) {
     document.getElementById('uploadedFilesList').innerHTML = uploadedFiles.join(' &nbsp; ')
 });
 
-const extension = ".JPG";
+var extension = "." + document.getElementById('ext').value
 let missing_file = [];
 
 function checkFolder() {
     const from = parseInt(document.getElementById('from').value);
     const to = parseInt(document.getElementById('to').value);
 
+    var extension = "." + document.getElementById('ext').value
     missing_file = []
 
     for (let i = from; i <= to; i++) {
-        const fileName = "IMG_" + i + extension
-        if(!(uploadedFiles.includes(fileName))) {
+        const fileName = "IMG_" + i + extension.toUpperCase()
+        const fileNameLC = "IMG_" + i + extension.toLowerCase()
+        if(!(uploadedFiles.includes(fileName) || uploadedFiles.includes(fileNameLC))) {
             missing_file.push(fileName)
         }
     }
