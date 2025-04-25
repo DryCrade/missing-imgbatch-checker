@@ -4,7 +4,7 @@ let uploadedFiles = [];
 
 uploadForm.addEventListener('submit', function(e) {
 
-    e.preventDefault(); // Corrected to prevent default behavior
+    e.preventDefault();
 
     const fileInput = document.getElementById('fileInput');
     const files = fileInput.files;

@@ -36,8 +36,5 @@ Alternatively, you can use the app directly via GitHub Pages:
 - Improve CSS Styling; make it look cleaner.
 - Implement additional features for batch processing multiple folders.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
 ## Acknowledgments
 Inspired by the need to ensure complete photo backups from iOS devices.
